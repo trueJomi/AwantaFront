@@ -1,0 +1,60 @@
+<div class="mx-12 my-12">
+    <div class="grid grid-flow-row-dense grid-cols-6 grid-rows-3">
+        <div class="col-span-6 flex justify-center">
+            <h1>
+                Awanta
+            </h1>
+        </div>
+        <div class="col-span-4">
+            Bieneido cierta persona qu eno quien es xD
+        </div>
+        <div class="col-span-1">
+            <span class="material-icons">
+                notifications
+            </span>
+        </div>
+        <div class="col-span-1 icono">
+            icono
+        </div>
+    </div>
+    <div class="metrics">
+        <div class="grid grid-flow-row-dense grid-cols-2 grid-rows-2">
+            <div class="col-span-1 mx-5 mb-5 text-xl text-red-500">
+                dinero gastado
+            </div>
+            <div class="col-span-1 mx-5 mb-5 text-xl text-blue-500">
+                meta
+            </div>
+            <div class="col-span-2 mx-5 text-xl text-green-400">
+                monto que le queda
+            </div>
+        </div>
+    </div>
+    <!-- md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 -->
+    <div class="moves grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 ">
+        <div class="col-span-1 xl:col-span-2 flex justify-center">
+            <ngx-charts-line-chart
+                [view]="view"
+                [schemeType]="schemeType"
+                [scheme]="scheme"
+                [legend]="legend"
+                [showXAxisLabel]="showXAxisLabel"
+                [showYAxisLabel]="showYAxisLabel"
+                [xAxis]="xAxis"
+                [yAxis]="yAxis"
+                [xAxisLabel]="xAxisLabel"
+                [yAxisLabel]="yAxisLabel"
+                [timeline]="timeline"
+                [results]="multi"
+                (select)="onSelect($event)"
+                (activate)="onActivate($event)"
+                (deactivate)="onDeactivate($event)"
+            >
+            </ngx-charts-line-chart>
+        </div>
+        <div class="col-span-1 md:ml-5 lg:col-span-2 lg:ml-10 xl:col-span-3">
+            tabla de movimientos
+        </div>
+    </div>
+    
+</div>

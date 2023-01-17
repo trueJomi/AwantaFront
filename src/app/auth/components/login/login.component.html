@@ -1,1 +1,61 @@
-<p>login works!</p>
+<div class="" >
+    <div class="bg-main mx-12 my-12 pt-5">
+        <div class="form-header flex justify-center mb-1">
+            <div class="bg-main font-black text-4xl text-center" >Bienbenido de vuelta</div>
+        </div>
+        <div class="form-content flex justify-center">
+            <form class="p-5 text-md font-bold">
+                <div class="form-group grid grid-cols-1">
+                    <label class="col-span-1 italic" for="email">Correo electronico</label>
+                    <div class="col-span-1 border bg-slate-100 rounded-2xl w-80 h-14 p-2 pl-3 flex justify-start">
+                        <span class="material-icons text-2xl mt-1 text-slate-500">
+                            mail
+                        </span>
+                        <input class=" text-slate-500 text-lg ml-2 bg-transparent outline-none break-words w-full border-none font-bold" id="email" type="email" name="email" required="required"/>
+                    </div>
+                  </div>
+                <div class="form-group grid grid-cols-1">
+                    <label class="col-span-1 italic" for="password">Contraseña</label>
+                    <div class="col-span-1 border bg-slate-100 rounded-2xl w-80 h-14 p-2 pl-3 flex justify-start">
+                        <span class="material-icons text-2xl mt-1 text-slate-500">
+                            lock
+                        </span>
+                        <input class="text-lg ml-2 w-64 bg-transparent font-bold outline-none break-words border-none text-slate-500" type="password" name="password" id="password" required="required">
+                    </div>
+                </div>
+                <div class="italic mt-6 text-center">
+                    <a href="" class="hover:underline">
+                        ¿olvidante tu contraseña?
+                    </a>
+                </div>
+
+                <div class="form-group text-center grid mt-48">
+                    <button class="border rounded-xl w-80 h-14 font-Black text-xl bg-RedMain text-YelowMain disabled:text-slate-300 disabled:bg-slate-100" [disabled]="" type="submit">
+                        Iniciar Sesión
+                    </button>
+                  </div>
+            </form>    
+        </div>
+        <div class="inf-part  ">
+            <div class="register flex justify-center">
+                ¿no tienes una cuenta  aun? 
+                <span class=" ml-2">
+                    <a routerLink="register" class="font-bold italic hover:underline">
+                        Registrate
+                    </a>
+                </span>
+            </div>
+            <div class="login flex justify-center mt-5">
+                <div>
+                    <span class=" col-span-1 font-bold italic">
+                        Or
+                    </span>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
